@@ -11,8 +11,6 @@ const db = await open({
 await db.exec(`
   CREATE TABLE IF NOT EXISTS tweet (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    message TEXT,
-    author_id INTEGER,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
   );
@@ -21,14 +19,10 @@ await db.exec(`
 await db.exec(`
   CREATE TABLE IF NOT EXISTS user (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT
+    name VARCHAR(255),
+    password VARCHAR(255)
   );
 `);
-// Insert a default user if the table is empty
-const userCount = await db.get('SELECT COUNT(*) AS count FROM user');
-if (userCount.count === 0) {
-  await db.run('INSERT INTO user (name) VALUES (?)', 'Anonymous');
-}
 
 // Export the database connection
 export default db;
