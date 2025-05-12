@@ -7,17 +7,49 @@ const router = express.Router()
 
 router.get("/", async (req, res) => {
    
+    if (req.session.loggedin == true) {
+      res.render("index.njk", {
 
-    res.render("index.njk", {
-
-    })
+      })
+    }
+    else {
+      res.redirect("/login")
+    }
 })
 
 router.get("/burgrik", async (req, res) => {
 
+  if (req.session.loggedin == true) {
     res.render("burgrik.njk", {
 
     })
+  }
+  else {
+    res.redirect("/login")
+  }
+})
+
+router.get("/remember", async (req,res) => {
+  
+  if (req.session.loggedin == true) {
+    res.render("remember.njk", {
+
+    })
+  }
+  else {
+    res.redirect("/login")
+  }
+})
+
+router.get("/dunk", async (req,res) => {
+  if (req.session.loggedin == true) {
+    res.render("dunk.njk", {
+
+    })
+  }
+  else {
+    res.redirect("/login")
+  }
 })
 
 router.get("/register", async (req, res) => {

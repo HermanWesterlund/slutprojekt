@@ -1,10 +1,42 @@
-{% extends "layout.njk" %}
 {% block content %}
-<form action="/create" method="POST" autocomplete="off">
-    <label for="name">Namn</label>
-    <input type="text" name="name" id="name">
-    <label for="name">Lösenord</label>
-    <input type="text" name="password" id="password" style="-webkit-text-security: square">
-    <button type="submit">Skapa</button>
-  </form>
+<main>
+  <head>
+    <link rel="stylesheet" href="/css/style.css" id="mode">
+    <link rel="stylesheetalt" href="/css/altStyle.css">
+  </head>
+  <body>
+    <div class="topbar" id="item4">
+      <h1>Registrera konto <img src="/img/channels4_profile.jpg" alt="enrico" id="button" width="50vh"></h1>
+  </div>
+  <div class="shadow">-</div>
+
+  <div class="center">
+    <p id="toggled" style="font-size: medium;">Its_Henrico mode on</p>
+    <script>
+        var henricoMode = true
+        document.getElementById("button").addEventListener("click", toggleMode);
+        function toggleMode() {
+            if (henricoMode == true) {
+                document.getElementById("mode").href = "/css/altStyle.css";
+                document.getElementById("toggled").textContent = "Its_Henrico mode off"
+                henricoMode = false;
+            }
+            else {
+                document.getElementById("mode").href = "/css/style.css";
+                document.getElementById("toggled").textContent = "Its_Henrico mode on"
+                henricoMode = true;
+            }
+        }
+        </script>
+        <div class="container3">
+          <form class="items2" action="/create" method="POST" autocomplete="off">
+            <label for="name">Namn</label>
+            <input type="text" name="name" id="name">
+            <label for="name">Lösenord</label>
+            <input type="text" name="password" id="password" style="-webkit-text-security: square">
+            <button type="submit">Skapa</button>
+          </form>
+        </div>
+  </body>
+</main>
 {% endblock %}

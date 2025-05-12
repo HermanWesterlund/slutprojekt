@@ -4,7 +4,7 @@ body {
     font-size: 2rem;
     height: 100vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(200, 0, 0);
+    background-color: white;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
     margin-top: 2%;
     font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(200, 0, 0);
+    background-color: white;
 }
 
 html {
@@ -66,9 +66,9 @@ main {
 .items {
     display: grid;
     place-items: center;
-    color: rgb(200, 0, 0);
+    color: white;
     background-color: black;
-    border: solid rgb(200, 0, 0);
+    border: solid white;
     border-bottom: transparent;
     margin-top: 5%;
 }
@@ -76,9 +76,9 @@ main {
 .items2 {
     display: grid;
     place-items: center;
-    color: rgb(200, 0, 0);
+    color: white;
     background-color: black;
-    border: solid rgb(200, 0, 0);
+    border: solid white;
     border-bottom: transparent;
     margin-top: 0%;
     width: 23.2vh;
@@ -88,7 +88,7 @@ main {
 .items3 {
     display: grid;
     place-items: center;
-    color: rgb(200, 0, 0);
+    color: white;
     background-color: black;
     margin-top: 0%;
     width: 23.2vh;
@@ -99,7 +99,7 @@ main {
     text-align: center;
     overflow: hidden;
     background-color: black;
-    color: rgb(200, 0, 0);
+    color: white;
     max-height: 11vh;
     padding: 0;
     margin: 0;
@@ -120,8 +120,8 @@ main {
     overflow: hidden;
     background-color: rgba(1, 1, 1, 0.2);
     color: rgba(0, 0, 0, 0);
-    border-left: solid rgb(200, 0, 0);
-    border-right: solid rgb(200, 0, 0);
+    border-left: solid white;
+    border-right: solid white;
     max-height: 5vh;
     padding: 0;
     margin: 0;
