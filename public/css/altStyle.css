@@ -4,7 +4,7 @@ body {
     font-size: 2rem;
     height: 100vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
     margin-top: 2%;
     font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
 }
 
 html {
@@ -66,9 +66,9 @@ main {
 .items {
     display: grid;
     place-items: center;
-    color: white;
-    background-color: black;
-    border: solid white;
+    color: rgb(240, 240, 240);
+    background-color: rgb(10, 10, 10);
+    border: solid rgb(240, 240, 240);
     border-bottom: transparent;
     margin-top: 5%;
 }
@@ -76,30 +76,30 @@ main {
 .items2 {
     display: grid;
     place-items: center;
-    color: white;
-    background-color: black;
-    border: solid white;
+    color: rgb(240, 240, 240);
+    background-color: rgb(10, 10, 10);
+    border: solid rgb(240, 240, 240);
     border-bottom: transparent;
     margin-top: 0%;
     width: 23.2vh;
-    border: solid black;
+    border: solid rgb(10, 10, 10);
 }
 
 .items3 {
     display: grid;
     place-items: center;
-    color: white;
-    background-color: black;
+    color: rgb(240, 240, 240);
+    background-color: rgb(10, 10, 10);
     margin-top: 0%;
     width: 23.2vh;
-    border: solid black;
+    border: solid rgb(10, 10, 10);
 }
 
 .topbar {
     text-align: center;
     overflow: hidden;
-    background-color: black;
-    color: white;
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 240, 240);
     max-height: 11vh;
     padding: 0;
     margin: 0;
@@ -120,8 +120,8 @@ main {
     overflow: hidden;
     background-color: rgba(1, 1, 1, 0.2);
     color: rgba(0, 0, 0, 0);
-    border-left: solid white;
-    border-right: solid white;
+    border-left: solid rgb(240, 240, 240);
+    border-right: solid rgb(240, 240, 240);
     max-height: 5vh;
     padding: 0;
     margin: 0;

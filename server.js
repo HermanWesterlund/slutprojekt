@@ -16,6 +16,7 @@ nunjucks.configure("views", {
 })
 
 app.use(logger("dev"))
+app.use(express.json());
 
 app.use(session({
     secret: "keyboard cat",
