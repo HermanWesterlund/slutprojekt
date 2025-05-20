@@ -17,3 +17,8 @@ eftersom att saker började clippa in i andra saker innan.
 Jag har testat sidan både i local host fönstret, och på glitch i båda preview alternativen. Det var på glitch som jag såg att saker
 inte riktigt blev rätt när skärmen blev mindre, så jag gjorde de små responsiva förändringarna efter att ha testat det på glitch.
 Jag testade sidan i syfte att se om den fungerade överhuvudtaget.
+Sedan testade jag den på telefonen.
+
+# Potentiella förbättringar
+
+Åtgärder vidtogs för att göra sidan mer responsiv, men den skulle definitivt kunna förbättras där. Allt syns på telefon men texten och rutorna är ganska små. Designen på sidan är inte heller så profesionell, vilket den i och för sig inte skulle vara heller (då den skulle vara baserad på ett gammalt skräparbete för minnets skull), men jag är övertygad om att man hade kunnat uppnå Its_Henrico känslan och profesionalism känslan samtidigt.
